@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7511DB251ECF3703005B7CA4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511DB221ECF3703005B7CA4 /* MainViewController.swift */; };
+		7511DB2A1ECF3746005B7CA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7511DB271ECF3746005B7CA4 /* HomeViewController.swift */; };
 		75AD7A731ECDB2E60018BB44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD7A711ECDB2E60018BB44 /* Main.storyboard */; };
 		75AD7A751ECDB2E60018BB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75AD7A741ECDB2E60018BB44 /* Assets.xcassets */; };
 		75AD7A781ECDB2E60018BB44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD7A761ECDB2E60018BB44 /* LaunchScreen.storyboard */; };
@@ -16,10 +18,11 @@
 		75AD7AA71ECDD7980018BB44 /* Focus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD7AA51ECDD7980018BB44 /* Focus.storyboard */; };
 		75AD7AAA1ECDD84F0018BB44 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD7AA81ECDD84F0018BB44 /* Discovery.storyboard */; };
 		75AD7AAD1ECDD8F20018BB44 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75AD7AAB1ECDD8F20018BB44 /* Mine.storyboard */; };
-		75AD7AB31ECDDE340018BB44 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AD7AB21ECDDE340018BB44 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7511DB221ECF3703005B7CA4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7511DB271ECF3746005B7CA4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		75AD7A6A1ECDB2E60018BB44 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AD7A721ECDB2E60018BB44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75AD7A741ECDB2E60018BB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,7 +34,6 @@
 		75AD7AA61ECDD7980018BB44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Focus.storyboard; sourceTree = "<group>"; };
 		75AD7AA91ECDD84F0018BB44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discovery.storyboard; sourceTree = "<group>"; };
 		75AD7AAC1ECDD8F20018BB44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Mine.storyboard; sourceTree = "<group>"; };
-		75AD7AB21ECDDE340018BB44 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7511DB211ECF3703005B7CA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75AD7A711ECDB2E60018BB44 /* Main.storyboard */,
+				7511DB221ECF3703005B7CA4 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7511DB231ECF3703005B7CA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7511DB241ECF3703005B7CA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7511DB261ECF3746005B7CA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75AD7A9D1ECDCFF00018BB44 /* Home.storyboard */,
+				7511DB271ECF3746005B7CA4 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7511DB281ECF3746005B7CA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7511DB291ECF3746005B7CA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		75AD7A611ECDB2E60018BB44 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +151,9 @@
 		75AD7A821ECDBDAC0018BB44 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				75AD7A9D1ECDCFF00018BB44 /* Home.storyboard */,
+				7511DB281ECF3746005B7CA4 /* Model */,
+				7511DB291ECF3746005B7CA4 /* View */,
+				7511DB261ECF3746005B7CA4 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -119,8 +169,9 @@
 		75AD7A841ECDBDAC0018BB44 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				75AD7A711ECDB2E60018BB44 /* Main.storyboard */,
-				75AD7AB21ECDDE340018BB44 /* MainViewController.swift */,
+				7511DB231ECF3703005B7CA4 /* Model */,
+				7511DB241ECF3703005B7CA4 /* View */,
+				7511DB211ECF3703005B7CA4 /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -209,7 +260,7 @@
 		75AD7A621ECDB2E60018BB44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = FHW;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = IOS_tang;
@@ -262,7 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75AD7A8D1ECDBDAC0018BB44 /* AppDelegate.swift in Sources */,
-				75AD7AB31ECDDE340018BB44 /* MainViewController.swift in Sources */,
+				7511DB251ECF3703005B7CA4 /* MainViewController.swift in Sources */,
+				7511DB2A1ECF3746005B7CA4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +327,7 @@
 				75AD7A721ECDB2E60018BB44 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		75AD7A761ECDB2E60018BB44 /* LaunchScreen.storyboard */ = {
@@ -292,7 +344,7 @@
 				75AD7A9E1ECDCFF00018BB44 /* Base */,
 			);
 			name = Home.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		75AD7AA21ECDD73B0018BB44 /* Living.storyboard */ = {
